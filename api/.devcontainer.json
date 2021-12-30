@@ -1,0 +1,13 @@
+{
+	"name": "API",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "api",
+	"shutdownAction": "none", // don't stop when vs code window closes
+	"extensions": [
+		"ms-dotnettools.csharp"
+	],
+	// Open the sub-folder with the source code
+	"workspaceFolder": "/workspace/api"
+}

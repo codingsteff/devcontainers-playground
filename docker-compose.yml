@@ -9,3 +9,14 @@ services:
         SA_PASSWORD: <YourStrong!Passw0rd>
     ports:
         - 1433:1433
+  api:
+    image: mcr.microsoft.com/dotnet/sdk:6.0
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    # command: dotnet watch
+    # ports:
+        # - 7056:5220
+  #   depends_on:
+  #     - db

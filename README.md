@@ -11,6 +11,8 @@ Inspired by [Connect to multiple containers](https://code.visualstudio.com/remot
 docker compose up -d
 code .
 # F1 => Remote-Containers: Open Folder in Container... select api
+dotnet watch
+open http://localhost:7056/swagger
 ```
 
 ## Containers
